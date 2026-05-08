@@ -1,0 +1,55 @@
+Onboarding
+
+Challenge & Outcome:
+From research to production, I mapped and simplified complex onboarding journeys, including account sign-up, first transactions, and savings account setup. This created a seamless first-time experience that reduced friction, improved user confidence, and guided users through critical early steps with clarity.
+
+Delivery:
+
+End-to-end onboarding flows
+Wireframes and interactive prototypes
+Journey maps for key user segments
+UX testing and iteration insights
+Experience
+
+Challenge & Outcome:
+Complex financial interactions, such as linking Apple Pay and managing savings accounts, needed to feel simple and intuitive. I designed structured interfaces and visual hierarchies that allowed users to complete tasks efficiently while feeling in control of their finances.
+
+Delivery:
+
+Core product UI screens
+Interactive high-fidelity prototypes
+Component-level interaction design
+Usability testing outcomes
+Trust
+
+Challenge & Outcome:
+As a new product, Zero needed credibility and emotional connection. I built a consistent visual identity across digital and physical touchpoints, ensuring the brand felt trustworthy, professional, and approachable.
+
+Delivery:
+
+Brand identity and style guide
+Debit card design
+UI styling for key screens
+Visual consistency rules
+System
+
+Challenge & Outcome:
+Risk of inconsistency and slow future development required a scalable solution. I created a reusable design system that ensured coherent components, patterns, and rules across product and marketing, supporting faster iteration and long-term growth.
+
+Delivery:
+
+Full design system
+Component library and tokens
+Brand guidelines integration
+Rules and documentation for future scalability
+Growth
+
+Challenge & Outcome:
+The product’s acquisition and marketing experience needed alignment with the core user experience. I designed a marketing website and supporting assets that reinforced the product’s value, creating a coherent experience from first interaction to conversion.
+
+Delivery:
+
+Marketing website design
+Supporting visual assets
+Alignment with product UI and brand
+Conversion-focused design improvements

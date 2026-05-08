@@ -1,0 +1,419 @@
+#stage {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: 300px;
+    top: 20px;
+    transform: rotate(3deg);
+}
+
+        /* Dotted border like the reference image */
+        .box-rect {
+            fill: white;
+            stroke: #1a1a1a;
+            stroke-width: 2;
+            stroke-dasharray: 5, 5;
+        }
+
+        .word-text {
+            font-size: 32px;
+            fill: #1a1a1a;
+            text-anchor: middle;
+            dominant-baseline: central;
+            pointer-events: none;
+            text-transform: uppercase;
+        }
+
+        .control-point {
+            fill: #f2a2c0;
+            stroke: #1a1a1a;
+            stroke-width: 1.5;
+        }
+
+
+        .boxed {
+  position: relative;
+  display: inline-block;
+  padding: 0px 12px; /* space around text */
+}
+
+/* Center square around the word */
+.boxed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(132, 132, 132); /* box around text */
+  pointer-events: none;
+}
+
+/* Top-left corner */
+.boxed .corner-tl,
+.boxed .corner-tr,
+.boxed .corner-bl,
+.boxed .corner-br {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: hotpink;
+  pointer-events: none;
+}
+
+.boxed .corner-tl { top: 0; left: 0; }
+.boxed .corner-tr { top: 0; right: 0; }
+.boxed .corner-bl { bottom: 0; left: 0; }
+.boxed .corner-br { bottom: 0; right: 0; }
+button#close-btn {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 30px;
+    border: none;
+    background: transparent;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9e9f9;
+  z-index: 1000;
+  padding: 20px;
+  /* Hidden State */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  
+  /* Smoothness */
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The "Open" State */
+.overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Optional: Add a slight slide-up to the content when opening */
+.overlay-content {
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.overlay.is-open .overlay-content {
+  transform: translateY(0);
+}
+
+.nav-item {
+  cursor: pointer;
+  margin: 10px 0;
+  list-style: none;
+}
+
+
+
+.asset-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    margin: 15px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.asset-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 120px;
+}
+
+.asset-wrapper svg {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+
+.asset-wrapper span {
+  font-size: 12px;
+  color: #555;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.divider {
+  width: 1px;
+  height: 80px;
+  background: rgba(0,0,0,0.05);
+}
+
+.toggle-container {
+    width: 130px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 11px rgb(0 0 0 / 37%);
+    font-size: 12px;
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
+
+.t-label {
+  transition: fill 0.4s ease;
+}
+
+#auto-toggle {
+  overflow: visible;
+}
+text.t-label.new-lab{
+  color: black;
+}
+@media (max-width: 968px) {
+#stage {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -20%;
+    top: 0;
+}
+}
+
+
+
+
+.animation-wrapper {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -15px;
+  right: 5%;
+}
+
+.main-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  width: 130px;
+}
+
+.loop-icon {
+  /* This ensures icons scale and rotate from their center */
+  transform-origin: center center;
+}
+
+
+
+
+
+#logo-main-container {
+    width: 100%;
+    display: block !important;
+    position: relative;
+}
+
+.test-border {
+    border: 2px solid blue; /* Blue boxes around each logo wrapper */
+    margin: 10px;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+svg {
+    display: block !important;
+    overflow: visible !important;
+}
+
+
+
+
+/*glass nav*/
+/* Liquid glass effect class */
+.glass-element{
+    display: block;
+    position: fixed;
+    position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 888;
+}
+.glass {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px) saturate(180%);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), inset 0 4px 20px rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.glass::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1), inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(125%);
+    pointer-events: none;
+}
+.icon {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: rgb(0, 128, 255);
+}
+
+.icon::after {
+  border-radius: 0.625rem;
+}
+.card-content-icon {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+.btn-glass {
+    position: relative;
+    color: rgb(0, 128, 255);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0;
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    font-weight: 500;
+}
+.btn-glass::after {
+  border-radius: 0.75rem;
+}
+/* Permanent display for Mobile (968px and below) */
+@media (max-width: 968px) {
+  .glass-element{
+    bottom: 0px !important;
+  }
+}
+
+@media (min-width: 968px){
+body.inner::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  pointer-events: none;
+  z-index: 777;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(241, 241, 240, 0) 0%,
+    rgba(241, 241, 240, 1) 80%
+  )}
+}
+
+
+
+/* Fade swiper */
+.mySwiperFade {
+  width: 100%;
+    overflow: hidden;
+    background: #e2e2e2;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+/* Center image properly */
+.mySwiperFade .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 0;
+}
+
+/* Image control */
+.mySwiperFade img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+/* Controls (reuse your style but scoped) */
+.fade-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.fade-prev,
+.fade-next {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fade-prev::after,
+.fade-next::after {
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+}

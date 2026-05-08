@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martin Hall</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/tricks.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<nav class="main-nav body-text">
+  <p><a href="home">Martin Hall</a></p>
+  <ul>
+    <li class="nav-item" data-content="Work">Work</li>
+    <!-- <li class="nav-item" data-content="Let's build something together.">Contact</li> -->
+    <li class=""><a target="_blank" href="martinhallcv_2026.pdf">Download CV</a></li>
+  </ul>
+</nav>
+
+<div id="nav-overlay" class="overlay">
+  <button id="close-btn" class="close-btn"><i class="bi bi-x-circle"></i></button>
+  <div class="overlay-content">
+    <h2 id="dynamic-text"></h2>
+    <div class="menu mt-20 mb-50">
+    <h1 class="title-text mb-20"><a href="home">Home</a></h1>
+    <h1 class="title-text mb-20"><a href="zero">Zero Bank</a></h1>
+    <h1 class="title-text mb-20"><a href="">Aareon</a></h1>
+    <h1 class="title-text mb-20"><a href="">Toyota</a></h1>
+    <h1 class="title-text mb-20"><a href="">Integrity Commerce</a></h1>
+    <h1 class="title-text mb-20"><a href="">Currys</a></h1>
+    </div>
+    <a href="mailto:uiuxmartin@outlook.com" class="button">Email</a>
+    <a href="tel:+447594261441" class="button">Phone</a>
+    <a href="https://www.linkedin.com/in/designermart/" target="_blank" class="button">LinkedIn</a>
+  </div>
+</div>
+
+
+<section id="target-top">
+  <!-- animation -->
+  <svg id="stage" viewBox="0 0 400 400">
+    <g id="box-group">
+        <rect id="main-box" class="box-rect" x="125" y="125" width="150" height="150" />
+        
+        <rect id="cp-tl" class="control-point" x="120" y="120" width="10" height="10" />
+        <rect id="cp-tr" class="control-point" x="270" y="120" width="10" height="10" />
+        <rect id="cp-bl" class="control-point" x="120" y="270" width="10" height="10" />
+        <rect id="cp-br" class="control-point" x="270" y="270" width="10" height="10" />
+    </g>
+
+    <text id="txt1" class="word-text" x="200" y="200" style="opacity:0">Strategy</text>
+    <text id="txt2" class="word-text" x="200" y="200" style="opacity:0">Design</text>
+    <text id="txt3" class="word-text" x="200" y="200" style="opacity:0">Build</text>
+
+    <circle id="cursor" r="8" fill="rgba(0,0,0,0.5)" style="pointer-events:none; visibility:hidden;" />
+  </svg>
+  <!-- content -->
+  <div class="intro">
+  <div class="container">
+    <h1 class="title-text mb-20">Senior Product Designer, who can also ship</h1>
+    <p class="body-text mb-20">From research to production, I design and build products that actually get used.</p>
+    <p class="highlighter body-text-light" style="display: flex; align-items: center;">
+    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff6a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00ff6a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Pulsing glow -->
+  <circle cx="20" cy="20" r="10" fill="url(#greenGlow)">
+    <animate attributeName="r" values="6;16;6" dur="1.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1.9;0;1.9" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Core dot -->
+  <circle cx="20" cy="20" r="5" fill="#00ff6a">
+    <animate attributeName="r" values="5;6;5" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+    </svg>Available for work</p>
+  </div>
+  <a class="button down scroll-btn" href="#target-section">View projects</a>
+  </div>
+</section>
+
+<!--zero-->
+<section id="target-section">
+  <!-- content -->
+  <div class="intro project">
+  <div class="container">
+    <h1 class="title-text mb-20">Zero Bank</h1>
+    <p class="body-text mb-20">
+      From research to production, I led the design of Zero Bank as the 
+      <span class="boxed">
+        first product designer
+        <span class="corner-tl"></span>
+        <span class="corner-tr"></span>
+        <span class="corner-bl"></span>
+        <span class="corner-br"></span>
+      </span>  creating a brand-new 
+      design system, mapping end-to-end user journeys, and building the company website. I ensured 
+      every touchpoint was coherent, usable, and aligned with the brand.
+    </p>
+    <a href="zero" class="button">View project</a>
+  </div>
+  <div class="container">
+    <img src="img/home/zero-jumbo.png" style="max-width: 100%;"/>
+    <div class="asset-card">
+      <div class="asset-wrapper">
+        <svg id="tree-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect class="trunk" x="46" y="70" width="8" height="25" rx="2" fill="#5D4037"/>
+          <circle class="leaf l3" cx="50" cy="35" r="18" fill="#81C784"/>
+          <circle class="leaf l2" cx="50" cy="50" r="22" fill="#4CAF50"/>
+          <circle class="leaf l1" cx="50" cy="65" r="26" fill="#2E7D32"/>
+        </svg>
+        <span>Sustainable</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="asset-wrapper">
+        <svg id="pound-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <text class="pound-icon" x="50" y="75" text-anchor="middle" font-weight="900" font-size="70" fill="#FFD54F">£</text>
+        </svg>
+        <span>Bank</span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!--aareon-->
+<section>
+  <!-- content -->
+  <div class="intro project">
+  <div class="container">
+    <h1 class="title-text mb-20">Aareon</h1>
+    <p class="body-text mb-20">
+      I redesigned old 
+      <span class="boxed">
+        complex legacy system
+        <span class="corner-tl"></span>
+        <span class="corner-tr"></span>
+        <span class="corner-bl"></span>
+        <span class="corner-br"></span>
+      </span>  solving intricate journey problems while expanding the design system. 
+      I partnered with stakeholders to modernize workflows and streamline usability, delivering practical, 
+      high-impact solutions.
+    </p>
+    <a href="" class="button">View project</a>
+  </div>
+  <div class="container">
+    <img src="img/home/aereon-jumbo.png" style="max-width: 100%;"/>
+    <div class="toggle-container">
+  <svg id="auto-toggle" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+    <rect class="toggle-bg" x="0" y="0" width="100%" height="100" rx="50" fill="#f0f0f0" />
+    
+    <text class="t-label old-lab" x="70" y="62" text-anchor="middle" font-family="sans-serif" font-weight="800" fill="#000000" font-size="34px">NEW</text>
+    <text class="t-label new-lab" x="230" y="62" text-anchor="middle" font-family="sans-serif" font-weight="800" fill="#ccc" font-size="34px">OLD</text>
+    
+    <g class="main-handle">
+  <!-- pill shape -->
+  <rect 
+    class="handle-circle" 
+    x="0" 
+    y="10" 
+    width="120" 
+    height="80" 
+    rx="40" 
+    fill="#fff"
+  />
+
+  <!-- dot stays centered -->
+  <circle class="handle-dot" cx="60" cy="50" r="10" fill="#ddd" />
+</g>
+  </svg>
+</div>
+  </div>
+
+  </div>
+</section>
+
+
+<!--toyota-->
+<section>
+  <!-- content -->
+  <div class="intro project">
+  <div class="container">
+    <h1 class="title-text mb-20">Toyota</h1>
+    <p class="body-text mb-20">
+      I helped launch the Kinto product to market by designing 
+      <span class="boxed">
+        components, flows, and user journeys
+        <span class="corner-tl"></span>
+        <span class="corner-tr"></span>
+        <span class="corner-bl"></span>
+        <span class="corner-br"></span>
+      </span>  that met both business and user needs. I collaborated closely 
+      with stakeholders to translate complex product requirements into 
+      intuitive experiences.
+    </p>
+    <a href="" class="button">🔒 View project</a>
+  </div>
+  <div class="container">
+    <img src="img/home/toyota-jumbo.jpeg" style="max-width: 100%; border-radius: 10px;"/>
+  </div>
+
+  </div>
+</section>
+
+
+
+
+<!--integrity commerce-->
+<section>
+  <!-- content -->
+  <div class="intro project">
+  <div class="container">
+    <h1 class="title-text mb-20">Integrity Commerce</h1>
+    <p class="body-text mb-20">
+      I built Shopify components, optimized 
+      <span class="boxed">
+        user journeys
+        <span class="corner-tl"></span>
+        <span class="corner-tr"></span>
+        <span class="corner-bl"></span>
+        <span class="corner-br"></span>
+      </span>  and led website facelifts for brands like Trapstar, Sii Bello, and Embi Studios. I 
+      ensured designs were visually striking, 
+      unctional, and production-ready, bridging brand identity and user experience.
+    </p>
+    <a href="" class="button">View project</a>
+  </div>
+  <div class="container">
+    <img src="img/home/trapstar-jumbo.png" style="max-width: 100%; border-radius: 10px;"/>
+
+    <div class="animation-wrapper">
+  <svg viewBox="0 0 292 292" xmlns="http://www.w3.org/2000/svg" class="main-svg">
+    <defs>
+      <linearGradient id="gold3d" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFE082" />
+        <stop offset="100%" stop-color="#FF8F00" />
+      </linearGradient>
+      <linearGradient id="teal3d" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#4DD0E1" />
+        <stop offset="100%" stop-color="#006064" />
+      </linearGradient>
+    </defs>
+
+    <g id="icon-shopify" class="loop-icon">
+      <path d="M223.774 57.34c-.201-1.46-1.48-2.268-2.537-2.357-1.055-.088-23.383-1.743-23.383-1.743s-15.507-15.395-17.209-17.099c-1.703-1.703-5.029-1.185-6.32-.805-.19.056-3.388 1.043-8.678 2.68-5.18-14.906-14.322-28.604-30.405-28.604-.444 0-.901.018-1.358.044C129.31 3.407 123.644.779 118.75.779c-37.465 0-55.364 46.835-60.976 70.635-14.558 4.511-24.9 7.718-26.221 8.133-8.126 2.549-8.383 2.805-9.45 10.462C21.3 95.806.038 260.235.038 260.235l165.678 31.042 89.77-19.42S223.973 58.8 223.775 57.34zM156.49 40.848l-14.019 4.339c.005-.988.01-1.96.01-3.023 0-9.264-1.286-16.723-3.349-22.636 8.287 1.04 13.806 10.469 17.358 21.32zm-27.638-19.483c2.304 5.773 3.802 14.058 3.802 25.238 0 .572-.005 1.095-.01 1.624-9.117 2.824-19.024 5.89-28.953 8.966 5.575-21.516 16.025-31.908 25.161-35.828zm-11.131-10.537c1.617 0 3.246.549 4.805 1.622-12.007 5.65-24.877 19.88-30.312 48.297l-22.886 7.088C75.694 46.16 90.81 10.828 117.72 10.828z" fill="#95BF46"/>
+      <path d="M221.237 54.983c-1.055-.088-23.383-1.743-23.383-1.743s-15.507-15.395-17.209-17.099c-.637-.634-1.496-.959-2.394-1.099l-12.527 256.233 89.762-19.418S223.972 58.8 223.774 57.34c-.201-1.46-1.48-2.268-2.537-2.357" fill="#5E8E3E"/>
+      <path d="M135.242 104.585l-11.069 32.926s-9.698-5.176-21.586-5.176c-17.428 0-18.305 10.937-18.305 13.693 0 15.038 39.2 20.8 39.2 56.024 0 27.713-17.577 45.558-41.277 45.558-28.44 0-42.984-17.7-42.984-17.7l7.615-25.16s14.95 12.835 27.565 12.835c8.243 0 11.596-6.49 11.596-11.232 0-19.616-32.16-20.491-32.16-52.724 0-27.129 19.472-53.382 58.778-53.382 15.145 0 22.627 4.338 22.627 4.338" fill="#FFF"/>
+    </g>
+
+    <g id="icon-cart" class="loop-icon" style="opacity: 0;">
+      <path d="M60 80 h40 l20 100 h110 l20-80 h-130" fill="none" stroke="url(#teal3d)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="110" cy="230" r="18" fill="url(#teal3d)"/>
+      <circle cx="200" cy="230" r="18" fill="url(#teal3d)"/>
+    </g>
+
+    <g id="icon-pound" class="loop-icon" style="opacity: 0;">
+      <text x="146" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-weight="900" font-size="200" fill="url(#gold3d)">£</text>
+    </g>
+  </svg>
+</div>
+    
+  </div>
+
+  </div>
+</section>
+
+
+
+<!--currys-->
+<section>
+  <!-- content -->
+  <div class="intro project">
+  <div class="container">
+    <h1 class="title-text mb-20">Currys</h1>
+    <p class="body-text mb-20">
+      I contributed to the 
+      <span class="boxed">
+        rebrand and product launch
+        <span class="corner-tl"></span>
+        <span class="corner-tr"></span>
+        <span class="corner-bl"></span>
+        <span class="corner-br"></span>
+      </span>  refining component design and mapping key user 
+      journeys. My work ensured the updated brand experience felt cohesive, 
+      modern, and frictionless for users.
+    </p>
+    <a href="" class="button">🔒 View project</a>
+  </div>
+  <div class="container">
+    <!-- <img src="img/home/trapstar-jumbo.png" style="max-width: 100%; border-radius: 10px;"/> -->
+<div id="logo-main-container" style="position: relative; width: 400px; height: 350px; margin: 0 auto; overflow: hidden;">
+  
+  <img id="logo-wide" src="img/home/old-currys-logo.png" alt="Wide Logo" 
+       style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100%; height: auto; z-index: 2;">
+
+  <img id="logo-circle" src="img/home/currys-logo.png" alt="Circle Logo" 
+       style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.8); max-width: 300px; height: auto; opacity: 0; z-index: 1;">
+
+</div>
+    
+  </div>
+
+  </div>
+</section>
+
+
+
+<!--currys-->
+<section>
+  <!-- content -->
+  <div class="intro mt-70 mb-70" style="height: fit-content;">
+  <div class="container blue-glass">
+    <h1 class="title-text mb-10">About me</h1>
+    <p class="body-text-light">
+      I’m a product driven designer with a strong front-end background, working across branding, product design, and engineering. With <span class="title-text mb-70"><span class="boxed">11 Years<span class="corner-tl"></span><span class="corner-tr"></span><span class="corner-bl"></span><span class="corner-br"></span></span></span> experience across startups and established brands, I take ideas from concept through to real, shipped products, focusing on how they look, work, and perform.
+    </p>
+    <p class="body-text-light">
+      My strength is in combining <span class="title-text mb-70"><span class="boxed">design thinking<span class="corner-tl"></span><span class="corner-tr"></span><span class="corner-bl"></span><span class="corner-br"></span></span></span> with hands-on development background, allowing me to build and refine ideas while staying within real constraints. This helps me create work that is usable, scalable, and grounded in reality.
+    </p>
+    <p class="body-text-light">
+      I focus on direction over trends. With the pace of new tools and AI, I use it as a co-pilot to move <span class="title-text mb-70"><span class="boxed">faster<span class="corner-tl"></span><span class="corner-tr"></span><span class="corner-bl"></span><span class="corner-br"></span></span></span> while staying in control of the outcome.
+    </p>
+  </div>
+  </div>
+</section>
+
+
+<!--footer-->
+<section>
+  <!-- content -->
+  <div class="">
+  <div class="container mt-50">
+    <a class="button up scroll-btn" href="#target-top">Back to top</a>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+<script src="js/svg.js"></script>
+<script src="js/general.js"></script>
+</body>
+</html>

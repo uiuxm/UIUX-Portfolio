@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martin Hall</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/tricks.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body class="inner">
+
+<nav class="main-nav body-text">
+  <p><a href="home">Martin Hall</a></p>
+  <ul>
+    <li class="nav-item" data-content="Work">Work</li>
+    <!-- <li class="nav-item" data-content="Let's build something together.">Contact</li> -->
+    <li class=""><a target="_blank" href="martinhallcv_2026.pdf">Download CV</a></li>
+  </ul>
+</nav>
+
+<div id="nav-overlay" class="overlay">
+  <button id="close-btn" class="close-btn"><i class="bi bi-x-circle"></i></button>
+  <div class="overlay-content">
+    <h2 id="dynamic-text"></h2>
+    <div class="menu mt-20 mb-50">
+    <h1 class="title-text mb-20"><a href="home">Home</a></h1>
+    <h1 class="title-text mb-20"><a href="zero">Zero Bank</a></h1>
+    <h1 class="title-text mb-20"><a href="">Aareon</a></h1>
+    <h1 class="title-text mb-20"><a href="">Toyota</a></h1>
+    <h1 class="title-text mb-20"><a href="">Integrity Commerce</a></h1>
+    <h1 class="title-text mb-20"><a href="">Currys</a></h1>
+    </div>
+    <a href="mailto:uiuxmartin@outlook.com" class="button">Email</a>
+    <a href="tel:+447594261441" class="button">Phone</a>
+    <a href="https://www.linkedin.com/in/designermart/" target="_blank" class="button">LinkedIn</a>
+  </div>
+</div>
+
+<!--glass nav-->
+<div class="container mt-100 glass-element">
+  <div class="glass">
+    <div class="card-header">
+      <div class="icon glass"><i class="bi bi-arrow-left-short"></i></div>
+    </div>
+    <div class="card-content">
+      <a href="#" class="btn-glass glass"></a>
+    </div>
+    <div class="card-header">
+      <div class="icon glass"><i class="bi bi-arrow-right-short"></i></div>
+    </div>
+  </div>
+</div>
+
+
+<section id="s1" data-title="Intro" class="full-page">
+  <!-- content -->
+  <div class="work project">
+  <div class="container">
+    <h1 class="title-text mb-70">
+      <span class="boxed">
+        Zero Bank
+        <span class="corner-tl"></span>
+        <span class="corner-tr"></span>
+        <span class="corner-bl"></span>
+        <span class="corner-br"></span>
+      </span></h1>
+    <p class="body-text mb-80 pt-70" style="max-width: 800px;">At Zero, I was the first product designer, leading the end-to-end design of a brand-new digital banking experience. I built the product from the ground up, creating the design system, mapping complete user journeys, designing the website, and ensuring every touchpoint, from onboarding to physical debit cards, was coherent, usable, and aligned with the brand. My work balanced strategic thinking, user-centered design, and practical execution, delivering a product that felt trustworthy, simple, and scalable.</p>
+    <div class="intro-footer mt-40">
+      <div>
+        <h3>Challenge</h3>
+        <p class="body-text-light">I faced a startup environment with no established brand, design system, or clear product direction. With no prior fintech experience, I had to quickly understand a complex, regulated space while defining the foundations of the product from scratch and aligning stakeholders around a cohesive vision.</p>
+      </div>
+      <div>
+        <h3>Outcome</h3>
+        <p class="body-text-light">The product launched with a seamless onboarding experience, intuitive financial flows, and a cohesive brand presence across digital and physical touchpoints. The design system provided a scalable foundation for future features, while marketing and product visuals reinforced credibility and user trust.</p>
+      </div>
+      <div>
+        <h3>Delivered</h3>
+        <p class="body-text-light">Design system<br>Website<br>Brand guidelines<br>Physical touchpoints<br>Marketing assets</p>
+      </div>
+      <div>
+        <h3>Year</h3>
+        <p class="body-text-light">2026</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="s2" data-title="Journeys" class="full-page">
+  <!-- content -->
+  <div class="work project pt-10 pb-10">
+  <div class="container">
+  <!--user joruneys-->
+  <div class="intro-text mt-40">
+      <div>
+        <h2 class="mb-10">User journeys</h2>
+        <p class="body-text-light">From research to production, I mapped and simplified a complex journeys, including onboarding, account sign-up, first transactions, and savings account setup. This created a seamless first-time experience that reduced friction, improved user confidence, and guided users through critical early steps with clarity.</p>
+      </div>
+      <div>
+        <h2 class="mb-10" style="visibility: hidden;">Onboarding</h2>
+        <p class="body-text-light">I mapped a detailed end-to-end journey across customer states, covering KYC, account creation, and activation flows. Informed by competitor analysis and fintech research, I reduced unnecessary steps and structured the experience to be more seamless than existing solutions, allowing users to progress with clarity and minimal friction.</p>
+      </div>
+    </div>
+    <!--user joruneys images-->
+      <div class="image-row mb-50 mt-50">
+      <div class="image-col col-1">
+        <img src="img/work/zero/onboarding-phone.png" alt="Image 1" />
+      </div>
+      <div class="image-col col-2">
+        <img src="img/work/zero/onboarding-mapping.jpg" alt="Image 2" />
+      </div>
+    </div>
+    <!--happy paths-->
+      <div class="mt-100 mb-50">
+        <h2 class="mb-10">Happy paths & edge cases</h2>
+        <p class="body-text-light" style="max-width: 600px;">In more complex scenarios, a linear journey was not enough. Interactions involving KYC, external providers, and changing customer states required mapping multiple outcomes rather than a single path. This reinforced that product design is not always clear cut, requiring adaptability to real-world constraints while still delivering a clear and consistent user experience.</p>
+      </div>
+      <!--happy path image-->
+    <div class="image-full mb-50 mt-50">
+  <img src="img/work/zero/savings-mapping.jpg" alt="Full width image" />
+</div>
+<!--fidelity designs-->
+<div class="mt-100 mb-50">
+        <h2 class="mb-10">Low/High fidelity</h2>
+        <p class="body-text-light" style="max-width: 600px;">I moved from low to high fidelity to take ideas from rough concepts through to production. Wireframes let me quickly map out flows and structure, while high fidelity designs refined the detail, interactions, and usability. This kept things moving fast early on, while making sure the final experience was solid and ready to build.</p>
+      </div>
+<!--fidelity images-->
+<div class="image-row mb-50 mt-50">
+      <div class="image-col col-1">
+        <p class="body-text pb-20">Wireframe</p>
+        <img src="img/work/zero/carbon-wire.png" alt="Image 1" />
+      </div>
+      <div class="image-col col-1">
+        <p class="body-text  pb-20">Low fidelity</p>
+        <img src="img/work/zero/carbon-lowfed.png" alt="Image 1" />
+      </div>
+      <div class="image-col col-1">
+        <p class="body-text  pb-20">High fidelity</p>
+        <img src="img/work/zero/carbon-hifed.png" alt="Image 1" />
+      </div>
+    </div>
+    <!--prototyping-->
+     <div class="mt-100 mb-50">
+        <h2 class="mb-10">Prototyping</h2>
+        <p class="body-text-light" style="max-width: 600px;">I used Figma prototypes to test flows and interactions, helping identify friction early and refine the experience before development. These prototypes were also used to align stakeholders and support early funding discussions.</p>
+      </div>
+    <div class="image-full mb-50 mt-50">
+  <img src="img/work/zero/prototyping.jpg" alt="Full width image" />
+</div>
+  </div>
+  </div>
+</section>
+
+
+
+
+<!--experience-->
+<section id="s3" data-title="Experience" class="full-page">
+  <!-- content -->
+  <div class="work project pt-10 pb-10">
+  <div class="container">
+  <div class="intro-text mt-40">
+      <div>
+        <h2 class="mb-10">Product Experience</h2>
+        <p class="body-text-light">I focused on shaping a core experience that feels simple and easy to trust. I translated complex financial journeys into clear, guided steps, helping users set up accounts, complete key actions, and start saving with minimal friction.</p>
+      </div>
+      <div>
+        <h2 class="mb-10" style="visibility: hidden;">Onboarding</h2>
+        <p class="body-text-light">I mapped the full end to end journey across different customer states and refined the flows using research and competitor insights. By removing unnecessary steps and simplifying processes like KYC and account setup, the experience feels smooth, familiar, and easy to navigate from the start.</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="swiper mySwiper mt-40" style="max-width: 1300px;">
+  <h4 class="center">Core Screens</h4>
+
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <p class="body-text-light center pb-20">Dashboard</p>
+      <img src="img/work/zero/dashboard-screen.png" width="100%">
+    </div>
+
+    <div class="swiper-slide">
+      <p class="body-text-light center pb-20">GreenScore</p>
+      <img src="img/work/zero/greenscore-screen.png" width="100%">
+    </div>
+
+    <div class="swiper-slide">
+      <p class="body-text-light center pb-20">Community options</p>
+      <img src="img/work/zero/community-screen.png" width="100%">
+    </div>
+
+    <div class="swiper-slide">
+      <p class="body-text-light center pb-20">Carbon offsetting</p>
+      <img src="img/work/zero/carbon-hifed.png" width="100%">
+    </div>
+
+    <div class="swiper-slide">
+      <p class="body-text-light center pb-20">Savings</p>
+      <img src="img/work/zero/savings-screen.png" width="100%">
+    </div>
+
+    <div class="swiper-slide">
+      <p class="body-text-light center pb-20">Transaction</p>
+      <img src="img/work/zero/transaction-screen.png" width="100%">
+    </div>
+
+    <div class="swiper-slide">
+      <p class="body-text-light center pb-20">Card</p>
+      <img src="img/work/zero/card-screen.png" width="100%">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="swiper-controls">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+    <!--key flows-->
+<div class="work project pt-10 pb-10">
+  <div class="container">
+  <div class="intro-text mt-40">
+      <div class="">
+        <h2 class="mb-10">Key flows</h2>
+        <p class="body-text-light" style="max-width: 600px;">Understanding how users move through complex, high pressure journeys and making those experiences feel clear and reliable. This Faster Payments flow is a strong example of that, where speed, accuracy, and trust are critical. I focused on breaking the process down into simple, structured steps that guide the user with confidence, reducing friction and making sure each action feels safe and intentional. The result is a flow that supports a core user need while staying fast, predictable, and easy to use.</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="container" style="margin: 20px;">
+  <div class="swiper mySwiperFade mt-40 pt-40 pb-40" style="max-width: 1300px;">
+  <h4 class="center mb-20 body-text-light">Happy path: <span class="blue">Sending faster payments</span></h4>
+
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="img/work/zero/sending-money1.png" />
+    </div>
+
+    <div class="swiper-slide">
+      <img src="img/work/zero/sending-money2.png" />
+    </div>
+
+    <div class="swiper-slide">
+      <img src="img/work/zero/sending-money3.png" />
+    </div>
+
+    <div class="swiper-slide">
+      <img src="img/work/zero/sending-money4.png" />
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <div class="swiper-controls fade-controls">
+    <div class="swiper-button-prev fade-prev"></div>
+    <div class="swiper-button-next fade-next"></div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section id="s4" data-title="Trust" class="full-page">
+  <!-- content -->
+  <div class="work project pt-10 pb-10">
+  <div class="container">
+  <!--user joruneys-->
+  <div class="intro-text mt-40">
+      <div>
+        <h2 class="mb-10">Brand trust</h2>
+        <p class="body-text-light">I focused on building trust through a clear and consistent visual identity that makes the product feel credible from the first interaction. In a space where users are naturally cautious, the goal was to create a calm, confident experience that feels reliable across every touchpoint. This extended beyond the interface into designing the debit cards and supporting marketing materials, ensuring the brand feels considered wherever users engage with it.</p>
+      </div>
+      <div>
+        <h2 class="mb-10" style="visibility: hidden;">Onboarding</h2>
+        <p class="body-text-light">I developed a cohesive system across the app, website, and physical assets so everything feels aligned and intentional. The website was also recognised by HubSpot as one of the top fintech designs to take inspiration from, ranking #4,<a class="blue" target="_blank" href="https://blog.hubspot.com/website/30-financial-website-designs-to-inspire-you">blog.hubspot.com/website/30-financial-website-designs-to-inspire-you</a>, which reflects the strength of the overall direction. Showing both digital and physical outputs highlights how the brand carries through the full experience, helping the product feel more established and trustworthy from day one.</p>
+      </div>
+    </div>
+    <!--user joruneys images-->
+      <div class="image-row">
+      <div class="image-col col-1" style="background: transparent">
+        <img src="img/work/zero/card1.png" alt="Image 1"/>
+        <img src="img/work/zero/phone-card.png" alt="Image 1" />
+        <img class="mt-90" src="img/work/zero/website-screen.png" alt="Image 1" />
+      </div>
+    </div>
+    <!--happy paths-->
+      <div class="mt-100 mb-50">
+        <h2 class="mb-10">Happy paths & edge cases</h2>
+        <p class="body-text-light" style="max-width: 600px;">In more complex scenarios, a linear journey was not enough. Interactions involving KYC, external providers, and changing customer states required mapping multiple outcomes rather than a single path. This reinforced that product design is not always clear cut, requiring adaptability to real-world constraints while still delivering a clear and consistent user experience.</p>
+      </div>
+      <!--happy path image-->
+    <div class="image-full mb-50 mt-50">
+  <img src="img/work/zero/savings-mapping.jpg" alt="Full width image" />
+</div>
+<!--fidelity designs-->
+<div class="mt-100 mb-50">
+        <h2 class="mb-10">Low/High fidelity</h2>
+        <p class="body-text-light" style="max-width: 600px;">I moved from low to high fidelity to take ideas from rough concepts through to production. Wireframes let me quickly map out flows and structure, while high fidelity designs refined the detail, interactions, and usability. This kept things moving fast early on, while making sure the final experience was solid and ready to build.</p>
+      </div>
+<!--fidelity images-->
+<div class="image-row mb-50 mt-50">
+      <div class="image-col col-1">
+        <p class="body-text pb-20">Wireframe</p>
+        <img src="img/work/zero/carbon-wire.png" alt="Image 1" />
+      </div>
+      <div class="image-col col-1">
+        <p class="body-text  pb-20">Low fidelity</p>
+        <img src="img/work/zero/carbon-lowfed.png" alt="Image 1" />
+      </div>
+      <div class="image-col col-1">
+        <p class="body-text  pb-20">High fidelity</p>
+        <img src="img/work/zero/carbon-hifed.png" alt="Image 1" />
+      </div>
+    </div>
+    <!--prototyping-->
+     <div class="mt-100 mb-50">
+        <h2 class="mb-10">Prototyping</h2>
+        <p class="body-text-light" style="max-width: 600px;">I used Figma prototypes to test flows and interactions, helping identify friction early and refine the experience before development. These prototypes were also used to align stakeholders and support early funding discussions.</p>
+      </div>
+    <div class="image-full mb-50 mt-50">
+  <img src="img/work/zero/prototyping.jpg" alt="Full width image" />
+</div>
+  </div>
+  </div>
+</section>
+
+
+<section id="s5" class="full-page" data-title="System" style="background:#b1b1b1;"><h1>System</h1></section>
+<section id="s6" class="full-page" data-title="Growth" style="background:#b1b1b1;"><h1>Growth</h1></section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/general.js"></script>
+<script>
+
+//Swiper
+const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+
+//Swiper Fade
+const fadeSwiper = new Swiper('.mySwiperFade', {
+  slidesPerView: 1,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  centeredSlides: true,
+
+  navigation: {
+    nextEl: '.fade-next',
+    prevEl: '.fade-prev',
+  },
+});
+
+
+// Secondary Nav
+const sections = document.querySelectorAll('.full-page');
+const leftBtn = document.querySelector('.bi-arrow-left-short').parentElement;
+const rightBtn = document.querySelector('.bi-arrow-right-short').parentElement;
+const discoverBtn = document.querySelector('.btn-glass');
+
+let currentIndex = 0; // Start at first section
+let isScrolling = false; // flag to prevent scroll spy flicker
+
+function goToSection(index) {
+  if(index < 0) index = sections.length - 1;
+  if(index >= sections.length) index = 0;
+  currentIndex = index;
+
+  // Disable scroll spy temporarily
+  isScrolling = true;
+
+  sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
+
+  // Update button immediately
+  updateDiscoverTitle(currentIndex);
+
+  // Re-enable scroll spy after scroll animation
+  // Approximate duration: 600ms (adjust if needed)
+  setTimeout(() => {
+    isScrolling = false;
+  }, 600);
+}
+
+function updateDiscoverTitle(index) {
+  if(discoverBtn) {
+    const title = sections[index].dataset.title || 'Discover more';
+    discoverBtn.textContent = `${title}`;
+  }
+}
+
+leftBtn.addEventListener('click', () => goToSection(currentIndex - 1));
+rightBtn.addEventListener('click', () => goToSection(currentIndex + 1));
+
+updateDiscoverTitle(currentIndex);
+
+// Scroll Spy (middle of viewport method)
+window.addEventListener('scroll', () => {
+  if(isScrolling) return; // ignore scroll while animating
+
+  const scrollMiddle = window.innerHeight / 2 + window.scrollY;
+
+  sections.forEach((section, i) => {
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
+
+    if(scrollMiddle >= sectionTop && scrollMiddle < sectionBottom) {
+      if(currentIndex !== i) {
+        currentIndex = i;
+        updateDiscoverTitle(currentIndex);
+      }
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>

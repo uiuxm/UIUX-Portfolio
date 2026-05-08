@@ -1,0 +1,28 @@
+🔹 Onboarding & User Journeys - - Onboarding
+
+Problem: Users needed a clear and intuitive path through the product
+Strategy: Mapped and simplified key journeys to reduce friction
+Execution: Wireframes, flows, prototyping
+
+🔹 Product Experience (Core UI) - - Experience
+
+Problem: Complex financial interactions needed to feel simple
+Strategy: Designed clear, structured interfaces with strong hierarchy
+Execution: Full product UI + prototype
+
+🔹 Trust & Brand - - Trust
+
+Problem: New product lacked credibility and emotional connection
+Strategy: Built a consistent visual identity across digital and physical touchpoints
+Execution: UI styling, debit cards, branding
+
+🔸 Design System & Scalability - - System
+
+Problem: Risk of inconsistency and slow future development
+Strategy: Created reusable components and rules
+Execution: Design system
+
+🔸 Growth & Marketing - - Growth
+
+Problem: Disconnect between product and acquisition experience
+Strategy: Aligned marketing visuals and website with product UX
